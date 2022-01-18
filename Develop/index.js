@@ -2,7 +2,7 @@
 
 const inquirer = require("inquirer");
 const fs = require('fs');
-const util = require("util");
+const util = require("utils");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -79,3 +79,5 @@ function init() {
 
 // Function call to initialize app
 init();
+
+module.exports = questions; 
