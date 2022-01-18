@@ -32,7 +32,15 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSection = ''
+  if (license === 'None') {
+    licenseSection = ''
+  } else {
+    licenseSection = `License: ${license}`
+  }
+  return licenseSection;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -47,17 +55,22 @@ function generateMarkdown(data) {
   * [Contribution](#contribution)
   * [Tests](#tests)
   * [Questions](#questions)
+  
   # Installtion
   The following necessary dependencies must be installed to run the application.
+
   # Usage
   In order to use this app, ${data.Usage}
+
   # License
   This project is licensed under the ${data.License} license.
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
   # Contributions
   Contributors: ${data.Contribution}
+
   # Tests
   The following is needed to run the test: ${data.Tests}
+
   # Questions
   If you have any questions about the repo, open an issue or contact ${data.Usage}
 `;
