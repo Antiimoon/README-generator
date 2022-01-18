@@ -2,7 +2,7 @@
 
 const inquirer = require("inquirer");
 const fs = require('fs');
-const util = require("utils");
+const util = require("util");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -72,12 +72,10 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(function(data) {
-            writeToFile("README.md", generateMarkdown(data));
             console.log(data);
-        })
+            writeToFile("README.md", generateMarkdown(data));
+        });
 }
 
 // Function call to initialize app
 init();
-
-module.exports = questions; 
