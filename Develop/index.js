@@ -29,7 +29,7 @@ const questions = [{
         name: "Usage"
     }, {
         type: "input",
-        message: "What liscense is being used? (ie...MIT)",
+        message: "What liscense is being used? (ie...MIT, Apache 2.0, GPL v3.0)",
         name: "License"
     }, {
         type: "input",
