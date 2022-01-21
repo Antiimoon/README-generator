@@ -73,7 +73,7 @@ function init() {
     inquirer.prompt(questions)
         .then(function(data) {
             console.log(data);
-            writeToFile("readme-guide.md", generateMarkdown(data));
+            writeToFile("README.md", generateMarkdown(data));
         });
 }
 
