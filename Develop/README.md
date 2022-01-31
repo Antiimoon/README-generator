@@ -8,6 +8,3 @@ node.js was install for this project.
 
 # Contributors
 Made by Antoinette Munoz
-
-# Link
-https://watch.screencastify.com/v/jSrifSc2u76ux6FrAFu1
